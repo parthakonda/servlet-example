@@ -1,15 +1,15 @@
 import java.io.*;
 import javax.servlet.*;
+import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
 
+@WebServlet("/post")
 public class PostServlet extends HttpServlet {
 
     public void init() throws ServletException{
         System.out.println("Servlet initiate");
     }
-
-
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

@@ -1,7 +1,9 @@
 import java.io.*;
 import javax.servlet.*;
+import javax.servlet.annotation.*;
 import javax.servlet.http.*;
 
+@WebServlet("/sample")
 public class ExampleServlet extends HttpServlet {
 
     // Some data
